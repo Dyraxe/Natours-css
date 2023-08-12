@@ -1,2 +1,2 @@
 # Natours-css
-Code along course from Jonas  
+Code along course from Jonas  Schmedtmann
