@@ -38,12 +38,11 @@ body {
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
-    animation-duration: 1s;
-    animation-name: moveInLeft;
-    animation-timing-function: ease-out;
+    animation: moveInLeft 1s ease-out;
     display: block;
     font-size: 4.5rem;
     font-weight: 400;
@@ -51,9 +50,7 @@ body {
 }
 
 .heading-primary-sub {
-    animation-duration: 1s;
-    animation-name: moveInRight;
-    animation-timing-function: ease-out;
+    animation: moveInRight 1s ease-out;
     display: block;
     font-weight: 700;
     font-size: 1.5rem;
@@ -70,10 +67,48 @@ body {
 /* Logos */
 .logo {
     height: 35px;
+    animation: moveInLeft 1s ease-out;
 }
 
 .logo-box {
     position: absolute;
     top: 40px;
     left: 40px;
+
+}
+
+
+
+/* Animation */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
