@@ -55,6 +55,7 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     letter-spacing: 1.2rem;
+    margin-bottom: 50px;
 }
 
 .text-box {
@@ -62,6 +63,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* Logos */
@@ -111,4 +113,75 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited {
+    position: relative;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s
+}
+
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+
+}
+
+.btn:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.btn::after {
+    border-radius: 100px;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+    /*Will apply the animation effects at 0% before it starts*/
 }
