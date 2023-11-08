@@ -41,8 +41,9 @@ body {
     $color-primary,
     $color-primary-darker
   );
-  color: $color-white;
-  // background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   letter-spacing: 2px;
   transition: all 0.2s;
   &:hover {
