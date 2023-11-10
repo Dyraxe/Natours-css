@@ -43,7 +43,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #55c57a, #28b485);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -123,7 +123,7 @@ body {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #55c57a, #28b485);
     color: transparent;
     -webkit-background-clip: text; }
   .feature-box:hover {
@@ -172,10 +172,10 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #7ed56f;
+  background-color: #55c57a;
   color: #fff; }
   .btn--green::after {
-    background-color: #7ed56f; }
+    background-color: #55c57a; }
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
@@ -186,17 +186,17 @@ body {
   font-size: 1.8rem;
   background-color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
-  color: #7ed56f;
+  color: #55c57a;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #7ed56f;
+  border-bottom: 1px solid #55c57a;
   padding: 3px;
   transition: all 0.2s; }
 
 .btn-text:hover {
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  background-color: #7ed56f;
+  background-color: #55c57a;
   transform: translateY(-2px); }
 
 .btn-text:active {
@@ -223,7 +223,7 @@ body {
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #7ed56f;
+      outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -253,7 +253,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #90cfa5, #28b485); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -271,7 +271,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #90cfa5, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
@@ -291,7 +291,7 @@ body {
     .card__heading-span-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span-2 {
-      background-image: linear-gradient(to right bottom, rgba(144, 207, 165, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .card__heading-span-3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -401,7 +401,7 @@ body {
   .form__input::-webkit-input-placeholder {
     color: #999; }
   .form__input:focus {
-    border-bottom: 3px solid #7ed56f;
+    border-bottom: 3px solid #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     outline: none; }
     .form__input:focus:invalid {
@@ -434,8 +434,8 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  background-color: rgba(126, 213, 111, 0.2);
-  border: 5px solid #7ed56f;
+  background-color: rgba(85, 197, 122, 0.2);
+  border: 5px solid #55c57a;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -446,7 +446,7 @@ body {
     display: block;
     height: 1rem;
     width: 1rem;
-    background-color: #7ed56f;
+    background-color: #55c57a;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -465,8 +465,119 @@ body {
   height: 1.4rem;
   width: 1.4rem; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  cursor: pointer;
+  z-index: 2000;
+  text-align: center;
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+
+.navigation__background {
+  z-index: 1000;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+  background-image: radial-gradient(#7ed56f, #28b485); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:visited, .navigation__link:link {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-size: 250%;
+  transition: all 0.4s;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%); }
+  .navigation__link:visited span, .navigation__link:link span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    background-color: #333; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 .header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -546,7 +657,7 @@ body {
     text-transform: uppercase;
     display: inline-block; }
   .footer__link:hover, .footer__link:active {
-    color: #7ed56f;
+    color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.1); }
   .footer__copyright {
@@ -563,7 +674,7 @@ body {
 .section-features {
   margin-top: -10rem;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-features > * {
@@ -579,7 +690,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #90cfa5, #28b485); }
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
