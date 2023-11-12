@@ -7,10 +7,26 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem - 10px
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //98px 9/16
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //8px 8/16
+  }
+  // the smaller one needs to be applied
+  //and big desktop uses max
+  @include respond(big-desktop) {
+    font-size: 75%; //12px
+  }
 }
 
 body {
   box-sizing: border-box;
-  // position: relative;
+  padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
