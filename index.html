@@ -9,8 +9,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="css/icons-font.css" />
+    <!-- <link rel="stylesheet" href="css/icons-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -91,11 +90,28 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
                 alt="photo 1"
+                sizes="(max-width: 65.25em) 20vw,(max-width: 37.5em) 30vw, 300px"
+                src="img/nat-1.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                 class="composition__photo composition__photo--p1"
               />
               <img
+                alt="photo 2"
+                sizes="(max-width: 65.25em) 20vw,(max-width: 37.5em) 30vw, 300px"
+                src="img/nat-2.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                alt="photo 3"
+                sizes="(max-width: 65.25em) 20vw,(max-width: 37.5em) 30vw, 300px"
+                src="img/nat-3.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                class="composition__photo composition__photo--p3"
+              />
+
+              <!-- <img
                 src="img/nat-2-large.jpg"
                 alt="photo 2"
                 class="composition__photo composition__photo--p2"
@@ -104,7 +120,7 @@
                 src="img/nat-3-large.jpg"
                 alt="photo 3"
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -397,7 +413,20 @@
     </main>
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            src="img/logo-green-2x.png"
+            alt="Full logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -454,7 +483,7 @@
             qui temporibus odio nostrum unde dolor quos quaerat minima? Ex,
             eligendi cum.
           </p>
-          <a href="#" class="btn btn--green">Book now</a>
+          <a href="#" class="btn btn--green popup__btn">Book now</a>
         </div>
       </div>
     </div>
